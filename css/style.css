@@ -75,7 +75,8 @@ body{
 =============================================*/
 
 #aboutSection{
-    height: 550px;
+    height: auto;
+    margin-bottom: 50px;
     padding-top: 3%;
     background-color: #fff;
 
