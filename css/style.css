@@ -84,8 +84,8 @@ body{
 
 .about-bg{
     border-radius: 90%;
-	width: 230px;
-    height: 330px;
+	width: 350px;
+    height: 300px;
     border: #000 solid 1px;
 }
 
@@ -103,7 +103,7 @@ body{
 }
 
 #adId{
-    margin-top: 35px;
+    margin-top: 25px;
     color:rgba(0, 0, 0, 0.842);
 }
 
@@ -199,7 +199,6 @@ padding-bottom: 6%;
     left: 0px;
     top: 0px;
 }
-
 /*=============================================
 =                  work                     =
 =============================================*/
@@ -210,6 +209,14 @@ padding-bottom: 6%;
 }
 .work img{
     height: 600px;
+}
+@media(max-width:569px){
+    .work{
+        height: 300px;
+    }
+    .work img{
+        height: 300px;
+    }
 }
 .rightCol{
     color: #000;
@@ -268,3 +275,8 @@ padding-bottom: 6%;
     font-size: 18px;
 }
 
+@media(max-width:600px){
+    .m-none{
+        display: none;
+    }
+}
