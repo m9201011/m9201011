@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ShiDa Huang</title>
     <!-- 連結Bootstrap.css -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- TODO: 客製化Bootstrap CSS -->
     <!-- 使用font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -22,6 +23,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" media="all"
+        href="https://lh3.googleusercontent.com/-4DNSn56G_sY/XBjrdjSDdGI/AAAAAAAAABs/KT1FsB3Pk7cUEuXnhcsOzt2TYd3t81oGgCEwYBhgL/w140-h139-p/logo.jpg">
 </head>
 
 <body>
@@ -42,8 +45,11 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#skill">SKILL</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item m-none">
                     <a class="nav-link text-white" href="#imageCarousel">WORK</a>
+                </li>
+                <li class="nav-item works ">
+                    <a class="nav-link text-white " href="#workSection-m">WORK</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#contact">CONTACT</a>
@@ -67,7 +73,7 @@
         <h1 class="section-title text-center pb-3">About me</h1>
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12 bg-m">
                     <img class="about-bg" src="./img/Hsd.jpg" alt="">
                 </div>
                 <div id="aboutRow" class=" col-md-5 col-12">
@@ -87,41 +93,44 @@
     <!-- aboutSection end -->
     <!-- skillSection  -->
     <section id="skill" class="col-12 ">
-        <h1 class="text-light skill-title text-center   ">Skill</h1>
-        <div class="container">
-            <div class="row col-md-12">
+        <h1 class="text-light skill-title text-center">Skill</h1>
+        <div class="container text-center ">
+            <div class="skill-group row col-sm-12 text-center">
                 <ul>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a style="vertical-align: inherit">HTML</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a style="vertical-align: inherit">CSS</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a style="vertical-align: inherit">RWD</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a style="vertical-align: inherit">Sass</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a style="vertical-align: inherit">JavaScript</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a href="https://getbootstrap.com/" target="_blank"
                             style="vertical-align: inherit">Bootstrap</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a href="https://jquery.com/" target="_blank" style="vertical-align: inherit">JQuery</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a href="https://reactjs.org/" target="_blank" style="vertical-align: inherit">React</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a href="https://webpack.js.org/" target="_blank" style="vertical-align: inherit">Webpack</a>
                     </li>
-                    <li>
+                    <li class="col-sm-4 col-md-3">
                         <a href="https://firebase.google.com/" target="_blank"
                             style="vertical-align: inherit">FireBase</a>
+                    </li>
+                    <li class="col-sm-4 col-md-3">
+                        <a href="https://git-scm.com/" target="_blank" style="vertical-align: inherit">Git</a>
                     </li>
                 </ul>
             </div>
@@ -131,13 +140,14 @@
                 <div class="title-group text-center skill-title text-light mt-3 mb-4">
                     <h3>Skill Proficiency</h3>
                 </div>
-                <canvas id="barChart" width="400" height="120"></canvas>
+                <canvas id="Chart" width="400" height="120"></canvas>
             </div>
         </section>
     </section>
     <!-- skillSection end -->
     <!-- workSection  -->
-    <div id="imageCarousel" class="carousel work slide" data-pause="false" data-ride="carousel" data-interval="10000">
+    <div id="imageCarousel" class="carousel m-none work slide" data-pause="false" data-ride="carousel"
+        data-interval="10000">
         <ol class="carousel-indicators">
             <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#imageCarousel" data-slide-to="1"></li>
@@ -146,8 +156,8 @@
         <div class="carousel-inner" role="listbox">
             <!-- 第一頁 -->
             <div class="carousel-item active">
-                <a href="https://website-computetdee-m9201011.surge.sh/dist/index.html" target="_blank"><img
-                        width="100%" src="./img/TDEEsite.png" alt=""></a>
+                <a href="https://website-computedee-m9201011.surge.sh/dist/index.html" target="_blank"><img width="100%"
+                        src="./img/TDEEsite.png" alt=""></a>
                 <div class="carousel-caption d-none d-md-block bg-light"
                     style="opacity:0.7;width: 400px;margin:0 auto;">
                     <h5>TDEE計算機</h5>
@@ -160,7 +170,7 @@
             <!-- 第二頁 -->
             <div class="carousel-item">
                 <a href="https://shopping-wbesite.firebaseapp.com/" target="_blank"><img width="100%"
-                        src="./img/firebaseWebsite.png" alt=""></a>
+                        src="./img/CostcoWebSite.png" alt=""></a>
                 <div class="carousel-caption d-none d-md-block bg-light "
                     style="opacity:0.8;width: 400px;margin:0 auto;">
                     <h5>Shopping-website</h5>
@@ -180,6 +190,7 @@
                     <br>
                     <p>Responsive web design</p>
                     <p>手刻@media斷點設計</p>
+                    <p>自動適應桌機、平板以及手機</p>
                 </div>
             </div>
         </div>
@@ -195,6 +206,39 @@
         </a>
     </div>
     <!-- workSection end -->
+    <!-- workSection M star -->
+    <div id="workSection-m">
+        <div class="card-groupM">
+            <div class="card-m col-sm-12 text-center">
+                <a href="https://website-computedee-m9201011.surge.sh/dist/index.html" target="_blank"><img width="100%"
+                        src="./img/TDEEsite.png" alt=""></a>
+                <h5>TDEE計算機</h5>
+                <br>
+                <p>使用WebPack建置專案</p>
+                <p>在React框架進行開發</p>
+                <p>使用JSX語法模組化</p>
+            </div>
+            <div class="card-m col-sm-12 text-center">
+                <a href="https://shopping-wbesite.firebaseapp.com/" target="_blank"><img width="100%"
+                        src="./img/CostcoWebSite.png" alt=""></a>
+                <h5>Shopping-website</h5>
+                <br>
+                <p>使用firebase製作主控台管理</p>
+                <p>FireBase Hosting進行架站</p>
+                <p>Google Map API 定位&標記</p>
+            </div>
+            <div class="card-m col-sm-12 text-center">
+                <a href="https://website-rwd-m9201011.surge.sh/" target="_blank"><img width="100%"
+                        src="./img/RWDsite.png" alt=""></a>
+                <h5>六角西餐廳</h5>
+                <br>
+                <p>Responsive web design</p>
+                <p>手刻@media斷點設計</p>
+                <p>自動適應桌機、平板以及手機</p>
+            </div>
+        </div>
+    </div>
+    <!-- workSection M end -->
     <!-- contactFooter -->
     <footer id="contact" class="col-12  py-5">
         <h1 class="text-center text-light contact-title pb-4">Contact</h1>
@@ -210,7 +254,7 @@
         <div class=" row ">
             <div class="col-md-6 col-6 text-right">
                 <li>
-                    <a href="https://www.facebook.com/shida.huang.77" target="_blank"><i
+                    <a href="https://www.facebook.com/shida.huang.77" class="fbCol" target="_blank"><i
                             class="fab fa-facebook"></i></a>
                 </li>
             </div>
@@ -222,7 +266,7 @@
         </div>
     </footer>
     <div class="copyCol">
-       <p class="text-center text-light copyfont pt-2">copyright©ShiDa Huang 2019</p>
+        <p class="text-center text-light copyfont pt-2">copyright©ShiDa Huang 2019</p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- chart.js -->
@@ -247,21 +291,22 @@
         });
 
 
-        const ctx = document.getElementById('barChart').getContext('2d');
+        const ctx = document.getElementById('Chart').getContext('2d');
         let barBackground = 'rgb(130, 194, 255)';
         const barChart = new Chart(ctx, {
-            type: 'bar',
+            type: 'doughnut',
             data: {
-                labels: ['HTML&CSS', 'JavaScript&JQuery&React', 'Webpack', 'Firebase'],
+                labels: ['HTML&CSS', 'JavaScript&JQuery&React', 'Webpack', 'RWD', 'Git'],
                 datasets: [{
                     label: 'Skill',
                     // fontColor: '#fff',
-                    data: [85, 70, 70, 70],
+                    data: [85, 70, 70, 70, 70],
                     backgroundColor: [
+                        '#1c79c0',
+                        '#f7df1e',
                         barBackground,
-                        barBackground,
-                        barBackground,
-                        barBackground
+                        'rgba(14, 233, 178, 0.993)',
+                        '#fc6d26'
                     ],
                     borderWidth: 1
                 }]
@@ -292,5 +337,4 @@
 
 </body>
 
-</html>
 </html>

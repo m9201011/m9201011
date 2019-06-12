@@ -1,3 +1,5 @@
+
+
 .carousel{
     width: 74% ;
     margin-left: 13%;
@@ -36,6 +38,9 @@ body{
     border-top: #fff solid 2px;
     border-bottom: #fff solid 2px;
 }
+.works{
+    display: none;
+}
 
 
 
@@ -69,6 +74,11 @@ body{
 }
 #header.affix{
     filter: blur(5px);
+}
+@media(max-width:768px){
+    #header{
+        background-position: center center;
+    }
 }
 /*=============================================
 =                  about                      =
@@ -106,8 +116,12 @@ body{
     margin-top: 25px;
     color:rgba(0, 0, 0, 0.842);
 }
-
-
+@media(max-width:768px){
+    .about-bg{
+        width: 300px;
+        height: 270px;
+    }
+}
 /*=============================================
 =                  Skill                     =
 =============================================*/
@@ -199,6 +213,16 @@ padding-bottom: 6%;
     left: 0px;
     top: 0px;
 }
+.chart{
+    width: 50px;
+    height: 60px;
+}
+@media(max-width:769px){
+    #Chart{
+        height: 207px;
+        width: 690px;
+    }
+}
 /*=============================================
 =                  work                     =
 =============================================*/
@@ -230,6 +254,23 @@ padding-bottom: 6%;
     color: #000000
 }
 /*=============================================
+=                  work-m                     =
+=============================================*/
+.card-m img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5px;
+    margin-top:5px;
+    border: rgba(0, 0, 0, 0.842) solid 2px;
+}
+.card-m{
+    margin-top:3px;
+    border: rgba(0, 0, 0, 0.842) solid 5px;
+}
+#workSection-m{
+    display: none;
+}
+/*=============================================
 =                  contact                     =
 =============================================*/
 
@@ -248,7 +289,6 @@ padding-bottom: 6%;
     height: 50%;
     display: inline-block;
     text-align: center;
-    /* padding: 3px; */
 }
 
 #contact ul{
@@ -275,8 +315,19 @@ padding-bottom: 6%;
     font-size: 18px;
 }
 
-@media(max-width:600px){
+
+
+@media(max-width:769px){
     .m-none{
         display: none;
     }
-}
+    #workSection-m{
+        display: block;
+    }
+    .skill-group{
+        padding-left: 0px;
+    }
+    .works{
+        display: block;
+    }
+} 
