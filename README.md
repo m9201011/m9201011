@@ -19,5 +19,5 @@
     <p>Firebase</p>
     <p>Git</p>
     <p>Webpack</p>
-    
+    <p>JQuery</p>
 
