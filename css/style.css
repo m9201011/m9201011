@@ -331,3 +331,7 @@ padding-bottom: 6%;
         display: block;
     }
 } 
+
+.copyCol > p {
+    margin-bottom: 0rem;
+}
