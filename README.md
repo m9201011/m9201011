@@ -14,10 +14,10 @@
     <p>JavaScript</p>
     <p>RWD</p>
     <p>ES6</p>
-    
+
 <h3>Framework</h3>
     <p>React</p>
-    
+
 <h3>Others</h3>
     <p>Bootstrap</p>
     <p>Firebase</p>
